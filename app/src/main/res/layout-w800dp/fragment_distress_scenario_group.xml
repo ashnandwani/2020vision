@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/dim_50dp"
+    android:layout_marginBottom="@dimen/dim_50dp"
+    android:layout_marginLeft="@dimen/dim_50dp"
+    android:id="@+id/root_layout"
+    tools:context=".ui.distress.DistressScenarioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <in.srain.cube.views.GridViewWithHeaderAndFooter
+        android:layout_below="@+id/lv"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/dim_0dp"
+        android:numColumns="5"
+        android:padding="@dimen/dim_0dp"
+        android:verticalSpacing="@dimen/dim_0dp"
+
+        />
+
+</RelativeLayout>
+

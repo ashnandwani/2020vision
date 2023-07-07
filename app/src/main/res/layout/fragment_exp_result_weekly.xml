@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.result.ExpResultWeeklyFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- TODO: Update blank fragment layout -->
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutForTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Calculated Weekly Results"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_40dp"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/expright11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Total # of Cycles:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE2"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Average # of Cycles/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE4"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE5"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Range of Cycles/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE6"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE7"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Total # of Hits:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE8"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE9"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Average # of Hits/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE10"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE11"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Range of Hits/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE12"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE13"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Total Vape Juice Dispensed:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE14"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE15"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Average Vape Juice Dispense/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE16"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE17"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Range of Vape Juice Dispensed/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE18"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_edittext"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/parentLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dim_40dp"
+                android:layout_weight="1.3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/expright20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE19"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="# of mg of Drug Dispensed:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE20"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/expright21"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewWE21"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Average mg of Drug Dispensed:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewWE22"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/expright1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Range of mg of Drug Dispensed/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW2"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="# of mL Remaining in Lung:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW4"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW5"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Average mL of Remaining in Lung:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW6"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW7"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Range of mL in Lung/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW8"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW9"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="# of mg of Drug Remaining in Lung:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW10"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW11"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Average mg of Remaining in Lung:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW12"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW13"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Range of mg in Lung/Day:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW14"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW15"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="# of mg of Drug Dispersed into Rest of Body:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW16"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW17"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Average mg of Drug Dispersed into Rest of Body:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW18"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/odd_experimentsetup_textview"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/expright10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textViewW19"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Range of mg of Drug Dispersed into Rest of Body:"
+                        android:padding="8dp"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGreen"/>
+
+                    <TextView
+                        android:id="@+id/textViewW20"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:background="@drawable/even_experimentsetup_edittext"
+                        android:imeOptions="actionNext"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

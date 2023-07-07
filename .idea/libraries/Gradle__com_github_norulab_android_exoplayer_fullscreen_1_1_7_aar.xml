@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.norulab:android-exoplayer-fullscreen:1.1.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a591a7611d59b7e048bfcc4f23dc0de1/jetified-android-exoplayer-fullscreen-1.1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a591a7611d59b7e048bfcc4f23dc0de1/jetified-android-exoplayer-fullscreen-1.1.7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a591a7611d59b7e048bfcc4f23dc0de1/jetified-android-exoplayer-fullscreen-1.1.7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.norulab/android-exoplayer-fullscreen/1.1.7/ce687ec113e1e218a5351ce909642dc6308ccef/android-exoplayer-fullscreen-1.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

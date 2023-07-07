@@ -1,0 +1,750 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">2020vision0.62</string>
+    <string name="app_title">App Version - 0.62</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="last_name">Last name</string>
+    <string name="student_id">Student id</string>
+    <string name="re_type_password">Re-type password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email_address">Email address</string>
+    <string name="address">Address</string>
+    <string name="first_name">First name</string>
+    <string name="class_id">Class id</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="teacher_id">Teacher id</string>
+    <string name="already_have_account_login_here">Already have account?Login here</string>
+    <string name="face_recognition">Face Recognition</string>
+    <string name="group">Group</string>
+    <string name="experiment_result">Experiment Result</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="create_group">Create Group</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="distrss_scenario">Replay a Distress Scenario</string>
+    <string name="group_experiment">Group Experiment</string>
+    <string name="age">Age</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="don_t_have_an_account_sign_up_here">Don\'t have an account? Sign Up here</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="internet_error">Internet is not working.Please check your internet connection!</string>
+    <string name="gallery_del">All Images deleted successfully.</string>
+    <string name="api_error">Something went wrong.Please Try Later.</string>
+    <string name="login_sucess">Login Successful.</string>
+    <string name="server_error">Server Not Responding. Please Try Later.</string>
+    <string name="error_empty_email">Please Enter Email First.</string>
+    <string name="error_valid_email">Please Enter Valid Email First.</string>
+    <string name="error_empty_password">Please Enter Password First.</string>
+    <string name="error_first_name">Please Enter Fist Name.</string>
+    <string name="error_last_name">Please Enter Last Name.</string>
+    <string name="error_age">Please Enter Age First.</string>
+    <string name="error_stu_id">Please Enter StudentId First</string>
+    <string name="error_class_id">Please Enter Class Id First</string>
+    <string name="error_phone">Please Enter Phone Number First.</string>
+    <string name="error_phone_length">Phone No. must be 10 digit.</string>
+
+    <string name="error_retype_pass">\"Please Enter Re-type Password First! \"</string>
+    <string name="error_pass_not_match">Password Not Match</string>
+    <string name="error_address">Please Enter Address First!</string>
+    <string name="error_less_password">Password Should Not Be Less Then 8 Characters</string>
+    <string name="forgot_password_txt">Forgot Password</string>
+    <string name="request">Requesting..</string>
+    <string name="password_send">Password Send On Your Register Email Id!</string>
+    <string name="view_detailed_effects_and_videos">View detailed effects and videos</string>
+    <string name="effects_on_face">Effects on face</string>
+    <string name="effects_on_lungs">Effects on lungs</string>
+    <string name="effects_on_brain">Effects on brain</string>
+    <string name="school_id">School id</string>
+    <string name="error_student_id">please Enter Student Id First</string>
+    <string name="error_school_id">Please Enter School Id First</string>
+    <string name="distress_scenario">Distress Scenario</string>
+    <string name="nida_curriculum">NIDA Curriculum</string>
+    <string name="nida_cur">NIDA Curriculum</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="lock_device">Lock Device</string>
+    <string name="crate_new_group">Create New Group</string>
+    <string name="group_name">Group name</string>
+    <string name="group_listing">Group Listing</string>
+    <string name="group_id">Group id</string>
+    <string name="leader_name">Leader Name</string>
+    <string name="experiment_status">Experiment Status</string>
+    <string name="action">Action</string>
+    <string name="student_listing">Student Listing</string>
+    <string name="select_all">Select All</string>
+    <string name="name">Name</string>
+    <string name="status">Status</string>
+    <string name="error_group_name">Please Enter Group Name First!</string>
+    <string name="msg_group_created">Group Created Successfully.</string>
+    <string name="add_to_group">Add to group</string>
+    <string name="delete">Delete</string>
+    <string name="view">View</string>
+    <string name="add_student">Add Student</string>
+    <string name="active">Active</string>
+    <string name="no_group_found">No Group Found.Please Create a new Group!</string>
+    <string name="group_leader">Select Group Leader</string>
+    <string name="add">Add</string>
+    <string name="selected_student">Selected Student:</string>
+    <string name="error_group">Please select group first.</string>
+    <string name="error_group_leader">Please select group leader first.</string>
+    <string name="group_members">Group Members</string>
+    <string name="delete_group">Delete Group</string>
+    <string name="delete_group_member">Delete Group Members</string>
+    <string name="videos">Videos</string>
+    <string name="student_added">Student Added Successfully.</string>
+    <string name="selected_no_member">Please select a group members first.</string>
+    <string name="error_select_student">Please select a student first.</string>
+    <string name="lbl_group_leader">Group Leader</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="additional_listener_msg">Additional listener message</string>
+    <string name="granted_permissions">Granted: %s</string>
+    <string name="permanently_denied_permissions">Permanently denied: %s</string>
+    <string name="permissions_required">Permissions required</string>
+    <string name="rationale_permissions">Rationale: %s</string>
+    <string name="request_again">Request again</string>
+    <string name="choose_week">Choose Week</string>
+    <string name="loading">Loading...</string>
+
+
+    <string name="msg_enter_details">To view each week\'s result you must enter your password. Please enter below</string>
+    <string name="msg_hint_name">Enter Password</string>
+    <string name="label_submit">Submit</string>
+
+
+    <string name="error_expName">Please Enter Experiment Name.</string>
+    <string name="error_expDate">Please Enter Experiment Date.</string>
+    <string name="error_expTime">Please Enter Experiment Time.</string>
+    <string name="error_expLength">Please Enter Experiment Length.</string>
+    <string name="error_vapeTime">Please Enter Vape Time.</string>
+    <string name="error_vapeTimeTotal">Please Enter Total Vapes Time.</string>
+    <string name="error_expCycle">Please Enter Experiment Cycle.</string>
+    <string name="error_waitTime">Please Enter Wait Time.</string>
+    <string name="error_drugType">Please Enter Drug Type.</string>
+    <string name="error_drugCalc">Please Enter Drug Calc.</string>
+    <string name="error_drugCalc_limit">Please Enter Drug Calc less than 100000</string>
+    <string name="error_watts">Please Enter Watts</string>
+    <string name="error_watts_limit">Please Enter Watts less than 200</string>
+    <string name="error_temprature">Please Enter Temprature.</string>
+    <string name="error_temprature_limit">Please Enter Temprature value between 100 to 1000</string>
+    <string name="error_drugConcetration">Please Enter Drug Concentration.</string>
+    <string name="error_drugConcetration_limit">Please Enter Drug Concentration less than 1000</string>
+    <string name="error_lungs">Please Enter Lungs.</string>
+    <string name="error_lungs_limit">Please Enter Lungs less than 10000</string>
+    <string name="error_expEndTime">Please Enter Experiment End Time.</string>
+    <string name="error_groupList">Please Select group.</string>
+    <string name="error_narcan">Please Enter Narcan.</string>
+    <string name="error_subjectpassed">Please Enter Subject Passed.</string>
+    <string name="error_group_all_List">Please Select all group.</string>
+    <string name="error_narcan_all">Please Enter all Narcan having group selected.</string>
+    <string name="error_subject_al_passed">Please Enter all Subject Passed having group selected.</string>
+
+    <string name="animation_loop_completed" tools:ignore="PluralsCandidate">Animation loop #%1$d completed</string>
+
+
+    <string name="not_device_owner">You are not the owner</string>
+    <string name="device_owner">You are admin!</string>
+    <string name="stop_lock_task">Stop lock task</string>
+    <string name="start_lock_task">Start lock task</string>
+    <string name="expval"><![CDATA[<100000]]></string>
+    <string name="year_array">Select Session</string>
+    <string name="delete_grp">Are you sure you would like to delete this group?</string>
+    <string name="delete_student">Are you sure you would like to delete this student from group?</string>
+    <string name="delete_students">Are you sure you would like to delete selected students from group?</string>
+
+    <string-array name="week1">
+        <item>"Select Date"</item>
+        <item>"03-01-2021"</item>
+        <item>"04-01-2021"</item>
+        <item>"05-01-2021"</item>
+        <item>"06-01-2021"</item>
+        <item>"07-01-2021"</item>
+        <item>"08-01-2021"</item>
+        <item>"09-01-2021"</item>
+    </string-array>
+    <string-array name="week2">
+        <item>"Select Date"</item>
+        <item>"10-01-2021"</item>
+        <item>"11-01-2021"</item>
+        <item>"12-01-2021"</item>
+        <item>"13-01-2021"</item>
+        <item>"14-01-2021"</item>
+        <item>"15-01-2021"</item>
+        <item>"16-01-2021"</item>
+    </string-array>
+    <string-array name="week3">
+        <item>"Select Date"</item>
+        <item>"17-01-2021"</item>
+        <item>"18-01-2021"</item>
+        <item>"19-01-2021"</item>
+        <item>"20-01-2021"</item>
+        <item>"21-01-2021"</item>
+        <item>"22-01-2021"</item>
+        <item>"23-01-2021"</item>
+    </string-array>
+    <string-array name="week4">
+        <item>"Select Date"</item>
+        <item>"24-01-2021"</item>
+        <item>"25-01-2021"</item>
+        <item>"26-01-2021"</item>
+        <item>"27-01-2021"</item>
+        <item>"28-01-2021"</item>
+        <item>"29-01-2021"</item>
+        <item>"30-01-2021"</item>
+    </string-array>
+    <string-array name="week5">
+        <item>"Select Date"</item>
+        <item>"31-01-2021"</item>
+        <item>"01-02-2021"</item>
+        <item>"02-02-2021"</item>
+        <item>"03-02-2021"</item>
+        <item>"04-02-2021"</item>
+        <item>"05-02-2021"</item>
+        <item>"06-02-2021"</item>
+    </string-array>
+    <string-array name="week6">
+        <item>"Select Date"</item>
+
+        <item>"07-02-2021"</item>
+        <item>"08-02-2021"</item>
+        <item>"09-02-2021"</item>
+        <item>"10-02-2021"</item>
+        <item>"11-02-2021"</item>
+        <item>"12-02-2021"</item>
+        <item>"13-02-2021"</item>
+    </string-array>
+    <string-array name="week7">
+        <item>"Select Date"</item>
+
+        <item>"14-02-2021"</item>
+        <item>"15-02-2021"</item>
+        <item>"16-02-2021"</item>
+        <item>"17-02-2021"</item>
+        <item>"18-02-2021"</item>
+        <item>"19-02-2021"</item>
+        <item>"20-02-2021"</item>
+    </string-array>
+    <string-array name="week8">
+        <item>"Select Date"</item>
+
+        <item>"21-02-2021"</item>
+        <item>"22-02-2021"</item>
+        <item>"23-02-2021"</item>
+        <item>"24-02-2021"</item>
+        <item>"25-02-2021"</item>
+        <item>"26-02-2021"</item>
+        <item>"27-02-2021"</item>
+    </string-array>
+    <string-array name="week9">
+        <item>"Select Date"</item>
+
+        <item>"28-02-2021"</item>
+        <item>"01-03-2021"</item>
+        <item>"02-03-2021"</item>
+        <item>"03-03-2021"</item>
+        <item>"04-03-2021"</item>
+        <item>"05-03-2021"</item>
+        <item>"06-03-2021"</item>
+    </string-array>
+    <string-array name="week10">
+        <item>"Select Date"</item>
+
+        <item>"07-03-2021"</item>
+        <item>"08-03-2021"</item>
+        <item>"09-03-2021"</item>
+        <item>"10-03-2021"</item>
+        <item>"11-03-2021"</item>
+        <item>"12-03-2021"</item>
+        <item>"13-03-2021"</item>
+    </string-array>
+    <string-array name="week11">
+        <item>"Select Date"</item>
+
+        <item>"14-03-2021"</item>
+        <item>"15-03-2021"</item>
+        <item>"16-03-2021"</item>
+        <item>"17-03-2021"</item>
+        <item>"18-03-2021"</item>
+        <item>"19-03-2021"</item>
+        <item>"20-03-2021"</item>
+    </string-array>
+    <string-array name="week12">
+        <item>"Select Date"</item>
+
+        <item>"21-03-2021"</item>
+        <item>"22-03-2021"</item>
+        <item>"23-03-2021"</item>
+        <item>"24-03-2021"</item>
+        <item>"25-03-2021"</item>
+        <item>"26-03-2021"</item>
+        <item>"27-03-2021"</item>
+    </string-array>
+    <string-array name="week13">
+        <item>"Select Date"</item>
+
+        <item>"28-03-2021"</item>
+        <item>"29-03-2021"</item>
+        <item>"30-03-2021"</item>
+        <item>"31-03-2021"</item>
+        <item>"01-04-2021"</item>
+        <item>"02-04-2021"</item>
+        <item>"03-04-2021"</item>
+    </string-array>
+    <string-array name="week14">
+        <item>"Select Date"</item>
+
+        <item>"04-04-2021"</item>
+        <item>"05-04-2021"</item>
+        <item>"06-04-2021"</item>
+        <item>"07-04-2021"</item>
+        <item>"08-04-2021"</item>
+        <item>"09-04-2021"</item>
+        <item>"10-04-2021"</item>
+    </string-array>
+    <string-array name="week15">
+        <item>"Select Date"</item>
+
+        <item>"11-04-2021"</item>
+        <item>"12-04-2021"</item>
+        <item>"13-04-2021"</item>
+        <item>"14-04-2021"</item>
+        <item>"15-04-2021"</item>
+        <item>"16-04-2021"</item>
+        <item>"17-04-2021"</item>
+    </string-array>
+    <string-array name="week16">
+        <item>"Select Date"</item>
+
+        <item>"18-04-2021"</item>
+        <item>"19-04-2021"</item>
+        <item>"20-04-2021"</item>
+        <item>"21-04-2021"</item>
+        <item>"22-04-2021"</item>
+        <item>"23-04-2021"</item>
+        <item>"24-04-2021"</item>
+    </string-array>
+    <string-array name="week17">
+        <item>"Select Date"</item>
+
+        <item>"25-04-2021"</item>
+        <item>"26-04-2021"</item>
+        <item>"27-04-2021"</item>
+        <item>"28-04-2021"</item>
+        <item>"29-04-2021"</item>
+        <item>"30-04-2021"</item>
+        <item>"01-05-2021"</item>
+    </string-array>
+    <string-array name="week18">
+        <item>"Select Date"</item>
+
+        <item>"02-05-2021"</item>
+        <item>"03-05-2021"</item>
+        <item>"04-05-2021"</item>
+        <item>"05-05-2021"</item>
+        <item>"06-05-2021"</item>
+        <item>"07-05-2021"</item>
+        <item>"08-05-2021"</item>
+    </string-array>
+    <string-array name="week19">
+        <item>"Select Date"</item>
+
+        <item>"09-05-2021"</item>
+        <item>"10-05-2021"</item>
+        <item>"11-05-2021"</item>
+        <item>"12-05-2021"</item>
+        <item>"13-05-2021"</item>
+        <item>"14-05-2021"</item>
+        <item>"15-05-2021"</item>
+    </string-array>
+    <string-array name="week20">
+        <item>"Select Date"</item>
+
+        <item>"16-05-2021"</item>
+        <item>"17-05-2021"</item>
+        <item>"18-05-2021"</item>
+        <item>"19-05-2021"</item>
+        <item>"20-05-2021"</item>
+        <item>"21-05-2021"</item>
+        <item>"22-05-2021"</item>
+    </string-array>
+    <string-array name="week21">
+        <item>"Select Date"</item>
+
+        <item>"23-05-2021"</item>
+        <item>"24-05-2021"</item>
+        <item>"25-05-2021"</item>
+        <item>"26-05-2021"</item>
+        <item>"27-05-2021"</item>
+        <item>"28-05-2021"</item>
+        <item>"29-05-2021"</item>
+    </string-array>
+    <string-array name="week22">
+        <item>"Select Date"</item>
+
+        <item>"30-05-2021"</item>
+        <item>"01-06-2021"</item>
+        <item>"02-06-2021"</item>
+        <item>"03-06-2021"</item>
+        <item>"04-06-2021"</item>
+        <item>"05-06-2021"</item>
+
+    </string-array>
+    <string-array name="week23">
+        <item>"Select Date"</item>
+        <item>"06-06-2021"</item>
+        <item>"07-06-2021"</item>
+        <item>"08-06-2021"</item>
+        <item>"09-06-2021"</item>
+        <item>"10-06-2021"</item>
+        <item>"11-06-2021"</item>
+        <item>"12-06-2021"</item>
+
+    </string-array>
+    <string-array name="week24">
+        <item>"Select Date"</item>
+        <item>"13-06-2021"</item>
+        <item>"14-06-2021"</item>
+        <item>"15-06-2021"</item>
+        <item>"16-06-2021"</item>
+        <item>"17-06-2021"</item>
+        <item>"18-06-2021"</item>
+        <item>"19-06-2021"</item>
+
+    </string-array>
+    <string-array name="week25">
+        <item>"Select Date"</item>
+        <item>"20-06-2021"</item>
+        <item>"21-06-2021"</item>
+        <item>"22-06-2021"</item>
+        <item>"23-06-2021"</item>
+        <item>"24-06-2021"</item>
+        <item>"25-06-2021"</item>
+        <item>"26-06-2021"</item>
+    </string-array>
+    <string-array name="week26">
+        <item>"Select Date"</item>
+
+        <item>"27-06-2021"</item>
+        <item>"28-06-2021"</item>
+        <item>"29-06-2021"</item>
+        <item>"30-06-2021"</item>
+        <item>"01-07-2021"</item>
+        <item>"02-07-2021"</item>
+        <item>"03-07-2021"</item>
+    </string-array>
+    <string-array name="week27">
+        <item>"Select Date"</item>
+
+
+        <item>"04-07-2021"</item>
+        <item>"05-07-2021"</item>
+        <item>"06-07-2021"</item>
+        <item>"07-07-2021"</item>
+        <item>"08-07-2021"</item>
+        <item>"09-07-2021"</item>
+        <item>"10-07-2021"</item>
+    </string-array>
+    <string-array name="week28">
+        <item>"Select Date"</item>
+
+
+        <item>"11-07-2021"</item>
+        <item>"12-07-2021"</item>
+        <item>"13-07-2021"</item>
+        <item>"14-07-2021"</item>
+        <item>"15-07-2021"</item>
+        <item>"16-07-2021"</item>
+        <item>"17-07-2021"</item>
+    </string-array>
+    <string-array name="week29">
+        <item>"Select Date"</item>
+
+
+        <item>"18-07-2021"</item>
+        <item>"19-07-2021"</item>
+        <item>"20-07-2021"</item>
+        <item>"21-07-2021"</item>
+        <item>"22-07-2021"</item>
+        <item>"23-07-2021"</item>
+        <item>"24-07-2021"</item>
+    </string-array>
+    <string-array name="week30">
+        <item>"Select Date"</item>
+
+
+        <item>"25-07-2021"</item>
+        <item>"26-07-2021"</item>
+        <item>"27-07-2021"</item>
+        <item>"28-07-2021"</item>
+        <item>"29-07-2021"</item>
+        <item>"30-07-2021"</item>
+        <item>"31-07-2021"</item>
+    </string-array>
+    <string-array name="week31">
+        <item>"Select Date"</item>
+        <item>"01-08-2021"</item>
+        <item>"02-08-2021"</item>
+        <item>"03-08-2021"</item>
+        <item>"04-08-2021"</item>
+        <item>"05-08-2021"</item>
+        <item>"06-08-2021"</item>
+        <item>"07-08-2021"</item>
+    </string-array>
+    <string-array name="week32">
+        <item>"Select Date"</item>
+
+
+        <item>"08-08-2021"</item>
+        <item>"09-08-2021"</item>
+        <item>"10-08-2021"</item>
+        <item>"11-08-2021"</item>
+        <item>"12-08-2021"</item>
+        <item>"13-08-2021"</item>
+        <item>"14-08-2021"</item>
+    </string-array>
+    <string-array name="week33">
+        <item>"Select Date"</item>
+
+        <item>"15-08-2021"</item>
+        <item>"16-08-2021"</item>
+        <item>"17-08-2021"</item>
+        <item>"18-08-2021"</item>
+        <item>"19-08-2021"</item>
+        <item>"20-08-2021"</item>
+        <item>"21-08-2021"</item>
+    </string-array>
+    <string-array name="week34">
+        <item>"Select Date"</item>
+
+
+        <item>"22-08-2021"</item>
+        <item>"23-08-2021"</item>
+        <item>"24-08-2021"</item>
+        <item>"25-08-2021"</item>
+        <item>"26-08-2021"</item>
+        <item>"27-08-2021"</item>
+        <item>"28-08-2021"</item>
+    </string-array>
+    <string-array name="week35">
+        <item>"Select Date"</item>
+
+        <item>"29-08-2021"</item>
+        <item>"30-08-2021"</item>
+        <item>"31-08-2021"</item>
+        <item>"01-09-2021"</item>
+        <item>"02-09-2021"</item>
+        <item>"03-09-2021"</item>
+        <item>"04-09-2021"</item>
+    </string-array>
+    <string-array name="week36">
+        <item>"Select Date"</item>
+
+        <item>"05-09-2021"</item>
+        <item>"06-09-2021"</item>
+        <item>"07-09-2021"</item>
+        <item>"08-09-2021"</item>
+        <item>"09-09-2021"</item>
+        <item>"10-09-2021"</item>
+        <item>"11-09-2021"</item>
+    </string-array>
+    <string-array name="week37">
+        <item>"Select Date"</item>
+
+        <item>"12-09-2021"</item>
+        <item>"13-09-2021"</item>
+        <item>"14-09-2021"</item>
+        <item>"15-09-2021"</item>
+        <item>"16-09-2021"</item>
+        <item>"17-09-2021"</item>
+        <item>"18-09-2021"</item>
+    </string-array>
+    <string-array name="week38">
+        <item>"Select Date"</item>
+
+        <item>"19-09-2021"</item>
+        <item>"20-09-2021"</item>
+        <item>"21-09-2021"</item>
+        <item>"22-09-2021"</item>
+        <item>"23-09-2021"</item>
+        <item>"24-09-2021"</item>
+        <item>"25-09-2021"</item>
+    </string-array>
+    <string-array name="week39">
+        <item>"Select Date"</item>
+
+        <item>"26-09-2021"</item>
+        <item>"27-09-2021"</item>
+        <item>"28-09-2021"</item>
+        <item>"29-09-2021"</item>
+        <item>"30-09-2021"</item>
+        <item>"01-10-2021"</item>
+        <item>"02-10-2021"</item>
+    </string-array>
+    <string-array name="week40">
+        <item>"Select Date"</item>
+
+        <item>"03-10-2021"</item>
+        <item>"04-10-2021"</item>
+        <item>"05-10-2021"</item>
+        <item>"06-10-2021"</item>
+        <item>"07-10-2021"</item>
+        <item>"08-10-2021"</item>
+        <item>"09-10-2021"</item>
+    </string-array>
+    <string-array name="week41">
+        <item>"Select Date"</item>
+
+        <item>"10-10-2021"</item>
+        <item>"11-10-2021"</item>
+        <item>"12-10-2021"</item>
+        <item>"13-10-2021"</item>
+        <item>"14-10-2021"</item>
+        <item>"15-10-2021"</item>
+        <item>"16-10-2021"</item>
+    </string-array>
+    <string-array name="week42">
+        <item>"Select Date"</item>
+
+        <item>"17-10-2021"</item>
+        <item>"18-10-2021"</item>
+        <item>"19-10-2021"</item>
+        <item>"20-10-2021"</item>
+        <item>"21-10-2021"</item>
+        <item>"22-10-2021"</item>
+        <item>"23-10-2021"</item>
+    </string-array>
+    <string-array name="week43">
+        <item>"Select Date"</item>
+
+        <item>"24-10-2021"</item>
+        <item>"25-10-2021"</item>
+        <item>"26-10-2021"</item>
+        <item>"27-10-2021"</item>
+        <item>"28-10-2021"</item>
+        <item>"29-10-2021"</item>
+        <item>"30-10-2021"</item>
+    </string-array>
+    <string-array name="week44">
+        <item>"Select Date"</item>
+
+        <item>"31-10-2021"</item>
+        <item>"01-11-2021"</item>
+        <item>"02-11-2021"</item>
+        <item>"03-11-2021"</item>
+        <item>"04-11-2021"</item>
+        <item>"05-11-2021"</item>
+        <item>"06-11-2021"</item>
+    </string-array>
+    <string-array name="week45">
+        <item>"Select Date"</item>
+
+        <item>"07-11-2021"</item>
+        <item>"08-11-2021"</item>
+        <item>"09-11-2021"</item>
+        <item>"10-11-2021"</item>
+        <item>"11-11-2021"</item>
+        <item>"12-11-2021"</item>
+        <item>"13-11-2021"</item>
+    </string-array>
+    <string-array name="week46">
+        <item>"Select Date"</item>
+
+        <item>"14-11-2021"</item>
+        <item>"15-11-2021"</item>
+        <item>"16-11-2021"</item>
+        <item>"17-11-2021"</item>
+        <item>"18-11-2021"</item>
+        <item>"19-11-2021"</item>
+        <item>"20-11-2021"</item>
+    </string-array>
+    <string-array name="week47">
+        <item>"Select Date"</item>
+
+        <item>"21-11-2021"</item>
+        <item>"22-11-2021"</item>
+        <item>"23-11-2021"</item>
+        <item>"24-11-2021"</item>
+        <item>"25-11-2021"</item>
+        <item>"26-11-2021"</item>
+        <item>"27-11-2021"</item>
+    </string-array>
+    <string-array name="week48">
+        <item>"Select Date"</item>
+
+        <item>"28-11-2021"</item>
+        <item>"29-11-2021"</item>
+        <item>"30-11-2021"</item>
+        <item>"01-12-2021"</item>
+        <item>"02-12-2021"</item>
+        <item>"03-12-2021"</item>
+        <item>"04-12-2021"</item>
+    </string-array>
+    <string-array name="week49">
+        <item>"Select Date"</item>
+
+        <item>"05-12-2021"</item>
+        <item>"06-11-2021"</item>
+        <item>"07-11-2021"</item>
+        <item>"08-12-2021"</item>
+        <item>"09-12-2021"</item>
+        <item>"10-12-2021"</item>
+        <item>"11-12-2021"</item>
+    </string-array>
+    <string-array name="week50">
+        <item>"Select Date"</item>
+
+        <item>"12-12-2021"</item>
+        <item>"13-11-2021"</item>
+        <item>"14-11-2021"</item>
+        <item>"15-12-2021"</item>
+        <item>"16-12-2021"</item>
+        <item>"17-12-2021"</item>
+        <item>"18-12-2021"</item>
+    </string-array>
+    <string-array name="week51">
+        <item>"Select Date"</item>
+
+        <item>"19-12-2021"</item>
+        <item>"20-11-2021"</item>
+        <item>"21-11-2021"</item>
+        <item>"22-12-2021"</item>
+        <item>"23-12-2021"</item>
+        <item>"24-12-2021"</item>
+        <item>"25-12-2021"</item>
+    </string-array>
+    <string-array name="week52">
+        <item>"Select Date"</item>
+
+        <item>"26-12-2021"</item>
+        <item>"27-12-2021"</item>
+        <item>"28-12-2021"</item>
+        <item>"29-12-2021"</item>
+        <item>"30-12-2021"</item>
+        <item>"31-12-2021"</item>
+        <item>"01-01-2022"</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

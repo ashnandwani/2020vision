@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#355ed0</color>
+    <color name="colorLightBlue">#7eabea</color>
+    <color name="colorBlueFade">#b2b5cf</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#07a15b</color>
+    <color name="colorOrange">#e25051</color>
+
+    <!-- App color  355ed0-->
+ <color name="colorBlue">#3c63cc</color> // button
+ <color name="colorBlueLight">#347de3</color> // input field text
+ <color name="colorBottomTab">#345fcf</color>
+ <color name="colorBottomTabSelected">#e4e4e4</color>
+ <color name="colorBottomTabText">#092f94</color>
+ <color name="colorFaceEffectsText">#0a329d</color>  // face effects
+ <color name="colorBlueDark">#1a237e</color> // signup text
+ <color name="ColorBlackLight">#3c3c3c</color>
+ <color name="colorFadeGray">#f0f0f0</color>
+ <color name="colorGroupEven">#ececec</color>
+    <color name="colorGroupOdd">#f4f4f4</color>
+    <color name="colorGroupDelete">#e35152</color>
+    <color name="colorGroupGreen">#07a15a</color>
+    <color name="colorAddGroup">#e5e5e5</color>
+    <color name="colorGray">#9E9E9E</color>
+    <color name="colorStudentItem">#ade0c9</color>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/btnretrive"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button_global"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:text="CAMERA"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/btncustomedit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnretrive"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button_global"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="GALLERY"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

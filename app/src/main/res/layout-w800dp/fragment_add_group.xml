@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.group.AddGroupFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/dim_30dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtSelectedStu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selected_student"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/dim_20sp"
+            android:visibility="gone"
+            android:textColor="@color/ColorBlackLight"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAddStudent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtSelectedStu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dim_10dp"
+            app:layout_constraintTop_toBottomOf="@+id/rvAddStudent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/spGroupName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/rounded_gray_edittext"
+                android:cursorVisible="false"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:focusable="false"
+                android:fontFamily="@font/lato_regular"
+                android:hint="Select Group Name"
+                android:paddingStart="@dimen/dim_10dp"
+                android:paddingEnd="@dimen/dim_10dp"
+                android:textColor="@color/ColorBlackLight"
+                android:textColorHint="@color/colorGray" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/spGroupLeader"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginStart="@dimen/dim_10dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/rounded_gray_edittext"
+                android:cursorVisible="false"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:focusable="false"
+                android:fontFamily="@font/lato_regular"
+                android:hint="@string/group_leader"
+                android:paddingStart="@dimen/dim_10dp"
+                android:paddingEnd="@dimen/dim_10dp"
+                android:textColor="@color/ColorBlackLight"
+                android:textColorHint="@color/colorGray" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_60dp"
+                android:layout_marginStart="@dimen/dim_10dp"
+                android:layout_weight=".5"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dim_18sp"
+                app:backgroundTint="@color/colorGroupGreen"
+                app:cornerRadius="@dimen/dim_10dp" />
+        </LinearLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already existing members of group"
+            android:textColor="@color/ColorBlackLight"
+            android:textSize="@dimen/dim_20sp"
+            android:fontFamily="@font/lato_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMembers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dim_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAlready"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

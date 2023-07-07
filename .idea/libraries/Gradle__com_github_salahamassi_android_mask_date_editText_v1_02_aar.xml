@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.salahamassi:android-mask-date-editText:v1.02@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84d89768960c1f38bc1f1ca697926705/jetified-android-mask-date-editText-v1.02/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84d89768960c1f38bc1f1ca697926705/jetified-android-mask-date-editText-v1.02/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84d89768960c1f38bc1f1ca697926705/jetified-android-mask-date-editText-v1.02/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.salahamassi/android-mask-date-editText/v1.02/683ec3f9737f4890281532c7b7d31b7da9be1b2e/android-mask-date-editText-v1.02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

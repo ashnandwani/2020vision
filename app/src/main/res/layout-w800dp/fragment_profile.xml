@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.teacher.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/dim_30dp"
+                    android:layout_marginTop="@dimen/dim_40dp"
+                    android:layout_marginRight="@dimen/dim_30dp"
+
+
+                    android:layout_weight="3"
+                    android:background="@drawable/style_with_boder">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardImgBag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/dim_30dp"
+                        android:layout_marginTop="@dimen/dim_50dp"
+                        android:layout_marginEnd="@dimen/dim_30dp"
+                        app:cardCornerRadius="75dp"
+                        app:strokeColor="@color/colorFadeGray"
+                        app:strokeWidth="8dp"
+
+                        >
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imgViewUserPic"
+                            android:layout_width="@dimen/dim_200dp"
+                            android:layout_height="@dimen/dim_200dp"
+                            android:src="@drawable/img_profile_placeholer"
+
+                            />
+
+
+                        <Space
+                            android:id="@+id/space"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/imgViewProfile"
+                            app:layout_constraintEnd_toEndOf="@+id/imgViewProfile"
+                            app:layout_constraintHorizontal_bias="0.82"
+                            app:layout_constraintStart_toStartOf="@+id/imgViewProfile"
+                            app:layout_constraintTop_toTopOf="@+id/imgViewProfile"
+                            app:layout_constraintVertical_bias="0.62" />
+
+                        <ImageView
+                            android:id="@+id/imgViewCamera"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dim_150dp"
+                            android:visibility="invisible"
+                            app:srcCompat="@drawable/ic_camera" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textCNView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dim_300dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:paddingTop="@dimen/dim_10dp"
+                        android:text="Name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_20sp" />
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginStart="@dimen/dim_30dp"
+                        android:layout_marginTop="@dimen/dim_350dp"
+
+                        android:layout_marginEnd="@dimen/dim_30dp"
+                        android:paddingBottom="@dimen/dim_65dp"
+                        android:stretchColumns="1">
+
+                        <TableRow>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_20dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text="User Type"
+                                    android:textColor="@color/colorBlueLight"
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvUserType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text=""
+                                    android:textSize="@dimen/dim_18sp" />
+                            </FrameLayout>
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_20dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text="User Name"
+                                    android:textColor="@color/colorBlueLight"
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvUserName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text=""
+                                    android:textSize="@dimen/dim_18sp" />
+                            </FrameLayout>
+
+
+                        </TableRow>
+                    </TableLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="4"
+                    android:paddingStart="@dimen/dim_30dp"
+
+                    android:paddingTop="@dimen/dim_20dp"
+                    android:paddingEnd="@dimen/dim_30dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_bold"
+                        android:paddingTop="@dimen/dim_10dp"
+                        android:text="Personal Detail"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_20sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSaveProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp"
+                        android:visibility="invisible" />
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/dim_50dp"
+                        android:stretchColumns="1">
+
+                        <TableRow>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_20dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text="First name"
+                                    android:textColor="@color/colorBlueLight"
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvfirstName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text=""
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editfirstName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:layout_marginRight="@dimen/dim_10dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:hint="@string/name"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:paddingEnd="@dimen/dim_5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/ColorBlackLight"
+                                    android:visibility="invisible" />
+
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_20dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text="Address"
+                                    android:textColor="@color/colorBlueLight"
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text=""
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editAddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:layout_marginRight="@dimen/dim_10dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:hint=""
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/dim_5dp"
+
+                                    android:paddingEnd="@dimen/dim_5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/ColorBlackLight"
+                                    android:visibility="invisible" />
+
+
+                            </FrameLayout>
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/dim_150dp"
+                        android:stretchColumns="1">
+
+                        <TableRow>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_20dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text="Last Name"
+                                    android:textColor="@color/colorBlueLight"
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvLastName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text=""
+                                    android:textSize="@dimen/dim_18sp" />
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editLastName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:layout_marginRight="@dimen/dim_10dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:hint=""
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text"
+                                    android:paddingStart="@dimen/dim_5dp"
+
+                                    android:paddingEnd="@dimen/dim_5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/ColorBlackLight"
+                                    android:visibility="invisible" />
+
+                            </FrameLayout>
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/dim_250dp"
+                        android:stretchColumns="1">
+
+                        <TableRow>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/textCDView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:paddingTop="@dimen/dim_10dp"
+                                    android:text="Contact Detail"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/dim_20sp" />
+                            </FrameLayout>
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_20dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text="Email Address"
+                                    android:textColor="@color/colorBlueLight"
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvEmail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text=""
+                                    android:textSize="@dimen/dim_18sp" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_20dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:text="Phone"
+                                    android:textColor="@color/colorBlueLight"
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvPhone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:digits="0123456789"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:paddingStart="@dimen/dim_5dp"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textSize="@dimen/dim_18sp" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editPhone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dim_50dp"
+                                    android:layout_marginRight="@dimen/dim_10dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:hint=""
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+
+                                    android:paddingStart="@dimen/dim_5dp"
+
+                                    android:paddingEnd="@dimen/dim_5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/ColorBlackLight"
+                                    android:visibility="invisible" />
+
+
+                            </FrameLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                </FrameLayout>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+</FrameLayout>

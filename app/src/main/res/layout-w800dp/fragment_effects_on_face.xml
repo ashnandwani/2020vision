@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.faceDetection.EffectsOnFaceFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dim_10dp">
+
+        <LinearLayout
+            android:id="@+id/layoutInfo"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFadeGray"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dim_5dp"
+            android:paddingTop="@dimen/dim_20dp"
+            android:paddingEnd="@dimen/dim_5dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/lato_regular"
+                android:text="Name: hfkadhfkhafhkja ewguqytyqewur"
+                android:textColor="@color/ColorBlackLight"
+                android:textSize="@dimen/dim_18sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="end"
+                android:text="Age:25"
+                android:textColor="@color/ColorBlackLight"
+                android:textSize="@dimen/dim_18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSlider"
+            android:layout_width="@dimen/dim_350dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFadeGray"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dim_5dp"
+            android:paddingEnd="@dimen/dim_5dp"
+            android:paddingBottom="@dimen/dim_20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutInfo">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="Name of drug"
+                android:textColor="@color/colorBlueLight"
+                android:textSize="@dimen/dim_14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDrugName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                android:focusable="false"
+                android:singleLine="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="Dosage of drug"
+                android:visibility="gone"
+                android:textColor="@color/colorBlueLight"
+                android:textSize="@dimen/dim_14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDosage"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+                android:focusable="false"
+                android:singleLine="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Drug consumption duration(in year) "
+                android:textColor="@color/colorBlueLight"
+                android:textSize="@dimen/dim_14sp" />
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/drugSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="@dimen/dim_5dp"
+                app:isb_indicator_color="@android:color/transparent"
+                app:isb_indicator_text_color="@android:color/transparent"
+                app:isb_indicator_text_size="0sp"
+                app:isb_max="5"
+                app:isb_min="1"
+                app:isb_only_thumb_draggable="false"
+                app:isb_seek_smoothly="false"
+                app:isb_show_tick_texts="true"
+                app:isb_thumb_color="@color/colorGroupGreen"
+                app:isb_thumb_size="15dp"
+                app:isb_tick_texts_color="@color/ColorBlackLight"
+                app:isb_tick_texts_size="13sp"
+                app:isb_ticks_count="5"
+                app:isb_track_background_color="@color/colorGray"
+                app:isb_track_background_size="1dp"
+                app:isb_track_progress_color="@color/colorGroupGreen"
+                app:isb_track_progress_size="4dp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_5dp"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/videos"
+            android:textColor="@color/ColorBlackLight"
+            android:textSize="@dimen/dim_25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutSlider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvVideo"
+            android:layout_width="@dimen/dim_350dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dim_5dp"
+            android:background="@color/colorFadeGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVideo" />
+
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/dim_60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layoutSlider"
+            app:layout_constraintTop_toTopOf="@+id/toggle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_5dp"
+            android:background="@color/colorBottomTab"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/dim_20dp"
+            android:paddingTop="@dimen/dim_5dp"
+            android:paddingEnd="@dimen/dim_20dp"
+            android:paddingBottom="@dimen/dim_5dp"
+            android:text="Some text her "
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dim_20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layoutSlider"
+            app:layout_constraintTop_toBottomOf="@+id/web" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dim_20dp"
+            android:layout_marginTop="@dimen/dim_60dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/rvVideo"
+            app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+        <RelativeLayout
+            android:id="@+id/toggle"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layoutSlider"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ToggleButton
+                android:id="@+id/toggle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="false"
+                android:textOff="Toggle to related video"
+                android:textOn="Toggle to face effects mode" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

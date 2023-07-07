@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.user.LoginActivity"
+        tools:ignore="MissingDefaultResource">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_310dp"
+            android:background="@drawable/img_banner"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/login"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dim_50sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:text="detail description"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dim_20sp" />
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="550dp"
+            android:layout_marginStart="@dimen/dim_50dp"
+            android:layout_marginEnd="@dimen/dim_50dp"
+            android:background="@android:color/white"
+            android:translationY="-90dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/tvSignUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:background="@drawable/logo_20" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_35dp"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:layout_marginEnd="@dimen/dim_35dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/email"
+                    android:textColor="@color/colorBlueLight"
+                    android:textSize="@dimen/dim_14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_35dp"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:layout_marginEnd="@dimen/dim_35dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/email"
+                    android:textColor="@color/colorBlueLight"
+                    android:textSize="@dimen/dim_14sp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTxtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_30"
+                    android:layout_marginEnd="@dimen/dim_30"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="abc@gmail.com"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dim_5dp"
+                    android:paddingEnd="@dimen/dim_5dp"
+                    android:singleLine="true" />
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_30"
+                    android:layout_marginEnd="@dimen/dim_30"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="abc@gmail.com"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dim_5dp"
+                    android:paddingEnd="@dimen/dim_5dp"
+                    android:singleLine="true" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_30"
+                    android:layout_marginEnd="@dimen/dim_30"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="abc@gmail.com"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dim_5dp"
+                    android:paddingEnd="@dimen/dim_5dp"
+                    android:singleLine="true" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_30"
+                    android:layout_marginEnd="@dimen/dim_30"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="abc@gmail.com"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dim_5dp"
+                    android:paddingEnd="@dimen/dim_5dp"
+                    android:singleLine="true" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_30"
+                    android:layout_marginEnd="@dimen/dim_30"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="abc@gmail.com"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/dim_5dp"
+                    android:paddingEnd="@dimen/dim_5dp"
+                    android:singleLine="true" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_35dp"
+                    android:layout_marginTop="@dimen/dim_5dp"
+                    android:layout_marginEnd="@dimen/dim_35dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/password"
+                    android:textColor="@color/colorBlueLight"
+                    android:textSize="@dimen/dim_14sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTxtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_30"
+                    android:layout_marginEnd="@dimen/dim_30"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/dim_5dp"
+                    android:paddingEnd="@dimen/dim_5dp"
+                    android:singleLine="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_20dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkboxRemember"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim_30"
+                        android:layout_weight="2"
+                        android:text="@string/remember_me"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvForgotPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="@string/forgot_password"
+                        android:textColor="@color/colorBlueDark"
+                        android:textSize="@dimen/dim_18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            style="@style/CustomRoundEdgeButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_70dp"
+            android:layout_marginStart="@dimen/dim_450dp"
+            android:layout_marginEnd="@dimen/dim_450dp"
+            android:elevation="@dimen/dim_7dp"
+            android:stateListAnimator="@null"
+            android:text="@string/login"
+            android:translationY="-140dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/don_t_have_an_account_sign_up_here"
+            android:textColor="@color/ColorBlackLight"
+            android:textSize="@dimen/dim_18sp"
+            android:layout_marginBottom="@dimen/dim_30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.distress.DistressExperimentSummary"
+        android:orientation="vertical"
+    android:layout_marginTop="@dimen/dim_50dp"
+    android:layout_marginRight="@dimen/dim_50dp"
+    android:layout_marginBottom="@dimen/dim_50dp"
+    android:layout_marginLeft="@dimen/dim_50dp"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/layoutForTeacher1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Summary of Experiment"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dim_20sp"
+
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutForTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dim_20dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTitle"
+                android:paddingTop="@dimen/dim_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="Subject was exposed to ABC drug/narcotic"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/lstGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="@dimen/dim_18sp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_weight="0.7"
+                android:text="Select Group"
+                tools:ignore="Suspicious0dp" />
+            <!-- <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>-->
+         </LinearLayout>
+     </LinearLayout>
+     <LinearLayout
+         android:id="@+id/layoutForTeacher2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="@dimen/dim_50dp"
+
+         tools:ignore="MissingConstraints">
+        <!-- <SeekBar
+             android:id="@+id/seekbar1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/dim_150dp"
+             android:padding="8dp" /> -->
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_margin="@dimen/dim_10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/heartim"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+
+                android:background="@drawable/style_with_left_boder"
+       />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dim_10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dim_20sp"
+                android:text="Drug effects on heart"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/style_with_bottom_boder"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/dim_10dp"
+
+                />
+
+            <pl.droidsonroids.gif.GifTextView
+                android:id="@+id/gifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

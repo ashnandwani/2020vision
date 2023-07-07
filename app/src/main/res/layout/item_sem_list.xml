@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:id="@+id/sem"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/colorGreen"
+            android:fontFamily="@font/lato_regular"
+            android:padding="8dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dim_18sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/week"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/even_experimentsetup_edittext"
+            android:hint=""
+            android:imeOptions="actionNext"
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:maxLength="2"
+            android:paddingLeft="@dimen/dim_10dp"
+            android:paddingTop="@dimen/dim_5dp"
+            android:paddingBottom="@dimen/dim_5dp"
+            android:singleLine="true"
+            android:textColor="@color/ColorBlackLight" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/day"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/even_experimentsetup_edittext"
+            android:hint=""
+            android:imeOptions="actionDone"
+            android:digits="01234567"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:paddingLeft="@dimen/dim_10dp"
+            android:paddingTop="@dimen/dim_5dp"
+            android:paddingBottom="@dimen/dim_5dp"
+            android:singleLine="true"
+            android:textColor="@color/ColorBlackLight" />
+    </LinearLayout>
+</RelativeLayout>

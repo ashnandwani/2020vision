@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutForMember"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dim_10dp"
+    android:paddingBottom="@dimen/dim_10dp"
+    android:weightSum="4"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/ListingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dim_20dp"
+        android:text="@string/select_all"
+        android:visibility="invisible" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/tvViewCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:buttonTint="@color/ColorBlackLight" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvStuName"
+        style="@style/GroupItemTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvStuStatus"
+        style="@style/GroupItemTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/active" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:visibility="gone">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdd"
+            style="@style/GroupItemTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dim_30"
+
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tvStuActionDelete"
+            style="@style/GroupItemTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/active"
+            app:srcCompat="@drawable/ic_delete_24dp" />
+    </RelativeLayout>
+
+</LinearLayout>

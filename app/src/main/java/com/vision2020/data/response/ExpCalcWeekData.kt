@@ -1,0 +1,3 @@
+package com.vision2020.data.response
+
+data class ExpCalcWeekData(val totalCycles:String, val averageCycles:String, val rangeofCycles:String, val totalHits:String, val averageHits:String, val rangeofHits:String, val totalVapeJuice:String, val averageVapeJuice:String, val rangeofVapeJuice:String, val totalDrugDispensed:String, val averageDrugDispensed:String, val rangeofDrugDispensed:String,   val totalLungs:String, val averageLungs:String, val rangeofLungs:String, val totalDrugLung:String, val averageDrugLung:String, val rangeofDrugLung:String, val totalDrugDispersed:String, val averageDrugDispersed:String, val rangeofDrugDispersed:String)

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.user.SignUpActivity"
+            tools:ignore="MissingDefaultResource">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_350dp"
+                android:background="@drawable/img_banner"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/register"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dim_50sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:text="detail description"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/dim_20sp" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewRegister"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_530dp"
+                android:layout_marginStart="@dimen/dim_50dp"
+                android:layout_marginEnd="@dimen/dim_50dp"
+                android:background="@android:color/white"
+                android:translationY="-230dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appCompatImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dim_30dp"
+                        android:background="@drawable/logo_20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.532"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgViewProfile"
+                        android:layout_width="@dimen/dim_140dp"
+                        android:layout_height="@dimen/dim_140dp"
+                        android:layout_marginStart="@dimen/dim_50dp"
+                        android:layout_marginTop="@dimen/dim_30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                        app:srcCompat="@drawable/img_profile_placeholer" />
+
+                    <Space
+                        android:id="@+id/space"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/imgViewProfile"
+                        app:layout_constraintEnd_toEndOf="@+id/imgViewProfile"
+                        app:layout_constraintHorizontal_bias="0.82"
+                        app:layout_constraintStart_toStartOf="@+id/imgViewProfile"
+                        app:layout_constraintTop_toTopOf="@+id/imgViewProfile"
+                        app:layout_constraintVertical_bias="0.62" />
+
+                    <ImageView
+                        android:id="@+id/imgViewCamera"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/dim_15"
+                        app:layout_constraintStart_toEndOf="@+id/space"
+                        app:layout_constraintTop_toBottomOf="@+id/space"
+                        app:srcCompat="@drawable/ic_camera" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/rbStudent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dim_50dp"
+                            android:checked="true"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/student"
+                            android:textColor="@color/ColorBlackLight"
+                            android:textSize="18sp" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/rbTeacher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dim_30dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/teacher"
+                            android:textColor="@color/ColorBlackLight"
+                            android:textSize="18sp" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/layoutForTeacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dim_30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imgViewProfile">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/first_name"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextFirstName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/first_name"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/class_id"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextClassId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/class_id"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_10dp"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/email_address"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextEmailAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/email_address"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_10dp"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/address"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/address"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPostalAddress"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dim_40dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/last_name"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/last_name"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/school_id"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextSchoolId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/school_id"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_10dp"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/password"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dim_40dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/student_id"
+                                android:textColor="@color/colorBlueLight"
+                                android:textSize="@dimen/dim_14sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextStudentId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="@string/student_id"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_10dp"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/phone_number"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/phone_number"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:maxLength="10"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dim_10dp"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:text="@string/re_type_password"
+                                android:textColor="@color/colorBlueLight" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextRetypePassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/re_type_password"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:paddingStart="@dimen/dim_5dp"
+                                android:paddingEnd="@dimen/dim_5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/ColorBlackLight" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                style="@style/CustomRoundEdgeButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_70dp"
+                android:layout_marginStart="@dimen/dim_450dp"
+                android:layout_marginEnd="@dimen/dim_450dp"
+                android:elevation="@dimen/dim_7dp"
+                android:stateListAnimator="@null"
+                android:text="@string/register"
+                android:translationY="-280dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewRegister" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="240dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/already_have_account_login_here"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cardViewRegister"
+                app:layout_constraintStart_toStartOf="@+id/cardViewRegister" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+

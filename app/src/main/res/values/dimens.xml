@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dim_30">30dp</dimen>
+    <dimen name="dim_10dp">10dp</dimen>
+    <dimen name="dim_35dp">35dp</dimen>
+    <dimen name="dim_5dp">5dp</dimen>
+    <dimen name="dim_20dp">20dp</dimen>
+    <dimen name="dim_40dp">40dp</dimen>
+    <dimen name="dim_7dp">7dp</dimen>
+    <dimen name="dim_70dp">70dp</dimen>
+    <dimen name="dim_450dp">450dp</dimen>
+    <dimen name="dim_50sp">50sp</dimen>
+    <dimen name="dim_30dp">30dp</dimen>
+    <dimen name="dim_200dp">200dp</dimen>
+    <dimen name="dim_250dp">250dp</dimen>
+    <dimen name="dim_300dp">300dp</dimen>
+    <dimen name="dim_305dp">305dp</dimen>
+    <dimen name="dim_310dp">310dp</dimen>
+    <dimen name="dim_20sp">20sp</dimen>
+    <dimen name="dim_50dp">50dp</dimen>
+    <dimen name="dim_480dp">480dp</dimen>
+    <dimen name="dim_40sp">40sp</dimen>
+    <dimen name="dim_150dp">150dp</dimen>
+    <dimen name="dim_130dp">130dp</dimen>
+    <dimen name="dim_320dp">320dp</dimen>
+    <dimen name="dim_25dp">25dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dim_60dp">60dp</dimen>
+    <dimen name="dim_14sp">14sp</dimen>
+    <dimen name="dim_18sp">18sp</dimen>
+    <dimen name="dim_490dp">490dp</dimen>
+    <dimen name="dim_510dp">510dp</dimen>
+    <dimen name="dim_140dp">140dp</dimen>
+    <dimen name="dim_15">15dp</dimen>
+    <dimen name="dim_400dp">400dp</dimen>
+    <dimen name="dim_0dp">0dp</dimen>
+    <dimen name="dim_430dp">430dp</dimen>
+    <dimen name="dim_420dp">420dp</dimen>
+    <dimen name="dim_65dp">65dp</dimen>
+
+    <dimen name="design_bottom_navigation_item_max_width" tools:override="true">600dp</dimen>
+    <dimen name="design_bottom_navigation_active_item_max_width" tools:override="true">600dp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">65dp</dimen>
+    <dimen name="design_bottom_navigation_icon_size" tools:override="true">34dp</dimen>
+    <dimen name="dim_520dp">520dp</dimen>
+    <dimen name="dim_530dp">530dp</dimen>
+    <dimen name="dim_100dp">100dp</dimen>
+    <dimen name="dim_2dp">2dp</dimen>
+    <dimen name="dim_350dp">350dp</dimen>
+    <dimen name="dim_25sp">25sp</dimen>
+
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+
+    <!--dimens for margins/other dimensions-->
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+
+    <!--others-->
+    <dimen name="wrap_constraints">0dp</dimen>
+
+
+    <dimen name="buttons_margin">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="title">20sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+</resources>

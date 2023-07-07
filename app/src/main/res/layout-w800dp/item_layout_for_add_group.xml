@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardViewAddGroup"
+        android:layout_width="@dimen/dim_200dp"
+        android:layout_height="@dimen/dim_70dp"
+        android:layout_marginStart="@dimen/dim_10dp"
+       app:cardBackgroundColor="@color/colorStudentItem"
+       app:cardCornerRadius="@dimen/dim_5dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSelectedStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/dim_10dp"
+            android:paddingEnd="@dimen/dim_5dp"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/ColorBlackLight"
+            android:textSize="@dimen/dim_20sp"
+            android:text="gdshghdfhg"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgViewCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/dim_5dp"
+            app:srcCompat="@drawable/ic_cross"/>
+    </com.google.android.material.card.MaterialCardView>
+

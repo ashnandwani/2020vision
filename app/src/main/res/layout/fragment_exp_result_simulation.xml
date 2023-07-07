@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id="@+id/layoutForTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_20dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim_10dp"
+                android:gravity="center"
+                android:text="Teacher Simulation"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53dp"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/lato_bold"
+                    android:paddingTop="@dimen/dim_10dp"
+                    android:text="Real Time"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dim_20sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="Semester"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="#wks/Sem"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="#Days/wk"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="#Wks"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="#Classes"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sem_id"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="2"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:id="@+id/week_id"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="16"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                    <TextView
+                        android:id="@+id/day_id"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="5"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="LOW Dose Duration"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:padding="8dp"
+                        android:paddingLeft="@dimen/dim_5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/week_low"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/odd_experimentresult_white_edittext"
+                            android:digits="0123456789"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:textColor="@color/ColorBlackLight" />
+
+                    </RelativeLayout>
+                    <!--   <com.google.android.material.textfield.TextInputEditText
+                           android:id="@+id/week_low"
+                           android:layout_width="150dp"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/odd_experimentresult_custom_edittext"
+                           android:digits="0123456789"
+                           android:gravity="center_horizontal|center_vertical"
+                           android:hint=""
+                           android:layout_weight="1"
+                           android:imeOptions="actionNext"
+                           android:inputType="phone"
+                           android:paddingLeft="@dimen/dim_10dp"
+                           android:paddingTop="@dimen/dim_5dp"
+                           android:paddingBottom="@dimen/dim_5dp"
+                           android:maxLength="2"
+                           android:singleLine="true"
+                           android:textColor="@color/ColorBlackLight" />-->
+                    <TextView
+                        android:id="@+id/class_low"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="20dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="MED Dose Duration"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:padding="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/dim_5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/week_med"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/odd_experimentresult_white_edittext"
+                            android:digits="0123456789"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:textColor="@color/ColorBlackLight" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/class_med"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_1_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="14dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="HIGH Dose Duration"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:padding="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/dim_5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/week_high"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/odd_experimentresult_white_edittext"
+                            android:digits="0123456789"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:textColor="@color/ColorBlackLight" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/class_high"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="14dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Total Duration\n           "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:id="@+id/max_week"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="14dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutForSem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_bold"
+                        android:paddingTop="@dimen/dim_10dp"
+                        android:text="SIMULATION"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_20sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="#Yrs"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="#Wks"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="Each Class = Wks"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="Low Dose Duration:"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:padding="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/dim_5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/real_yr_low"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/odd_experimentresult_white_edittext"
+                            android:digits="0123456789"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:textColor="@color/ColorBlackLight" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/real_wk_low"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:id="@+id/real_class_low"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="MED Dose Duration:"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:padding="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/dim_5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/real_yr_med"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/odd_experimentresult_white_edittext"
+                            android:digits="0123456789"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:textColor="@color/ColorBlackLight" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/real_wk_med"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:id="@+id/real_class_med"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_1_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="HIGH Dose Duration:"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:padding="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/dim_5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/real_yr_high"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/odd_experimentresult_white_edittext"
+                            android:digits="0123456789"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:hint=""
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:textColor="@color/ColorBlackLight" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/real_wk_high"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentresult_custom_edittext"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:id="@+id/real_class_high"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text="TOTAL Duration"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:id="@+id/total_sumulation_yr"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                    <TextView
+                        android:id="@+id/total_sumulation_wk"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_last_last"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/calculate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button_global"
+                        android:backgroundTint="@color/colorBlue"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Calculate"></Button>
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_button_global"
+                        android:backgroundTint="@color/colorBlue"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Submit"
+                        android:visibility="gone"></Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

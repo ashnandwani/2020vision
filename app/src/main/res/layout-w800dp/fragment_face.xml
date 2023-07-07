@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.faceDetection.FaceReconFragment">
+
+ <!--   <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />-->
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardImgBag"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dim_420dp"
+        android:layout_marginStart="@dimen/dim_30dp"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:layout_marginEnd="@dimen/dim_30dp"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorFadeGray"
+        app:strokeWidth="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgViewUserPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_5dp"
+            android:scaleType="centerCrop" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgViewCamera"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            app:srcCompat="@drawable/ic_camera" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_20dp"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dim_0dp"
+        android:paddingEnd="@dimen/dim_30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFace"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:paddingStart="@dimen/dim_5dp"
+            android:text="@string/name"
+            android:textColor="@color/colorBlueLight"
+            android:textSize="@dimen/dim_14sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingStart="@dimen/dim_5dp"
+            android:paddingEnd="@dimen/dim_5dp"
+            android:singleLine="true"
+            android:textColor="@color/ColorBlackLight" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:fontFamily="@font/lato_regular"
+            android:paddingStart="@dimen/dim_5dp"
+            android:text="@string/age"
+            android:textColor="@color/colorBlueLight"
+            android:textSize="@dimen/dim_14sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:hint="@string/age"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingStart="@dimen/dim_5dp"
+            android:paddingEnd="@dimen/dim_5dp"
+            android:singleLine="true"
+            android:textColor="@color/ColorBlackLight" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_20dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:fontFamily="@font/lato_regular"
+            android:paddingStart="@dimen/dim_5dp"
+            android:paddingEnd="@dimen/dim_5dp"
+            android:singleLine="true"
+            android:text="@string/view_detailed_effects_and_videos"
+            android:textColor="@color/ColorBlackLight" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEffectOnFace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:drawableStart="@drawable/ic_face_effect"
+            android:drawablePadding="@dimen/dim_10dp"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center_vertical"
+            android:text="@string/effects_on_face"
+            android:textColor="@color/colorFaceEffectsText"
+            android:textSize="@dimen/dim_20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEffectsOnLungs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:drawableStart="@drawable/ic_lung_effect"
+            android:drawablePadding="@dimen/dim_10dp"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center_vertical"
+            android:text="@string/effects_on_lungs"
+            android:textColor="@color/colorFaceEffectsText"
+            android:textSize="@dimen/dim_20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEffectsOnBrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:drawableStart="@drawable/ic_brain_effect"
+            android:drawablePadding="@dimen/dim_10dp"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center_vertical"
+            android:text="@string/effects_on_brain"
+            android:textColor="@color/colorFaceEffectsText"
+            android:textSize="@dimen/dim_20sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

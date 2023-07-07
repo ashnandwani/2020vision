@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id="@+id/layoutForTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/lato_bold"
+                    android:paddingTop="@dimen/dim_10dp"
+                    android:text="Semester"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dim_20sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="Session:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <Spinner
+                        android:id="@+id/sesDate"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/odd_experimentsetup_edittext"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:entries="@array/year_array"
+                        android:textSize="@dimen/dim_18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout21"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:background="@color/colorGreen"
+                        android:fontFamily="@font/lato_regular"
+                        android:padding="8dp"
+                        android:text="Number of Semester:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dim_18sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/no_of_sem"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/even_experimentsetup_edittext"
+                        android:hint=""
+                        android:imeOptions="actionDone"
+                        android:digits="0123456789"
+                        android:inputType="phone"
+                        android:maxLength="2"
+                        android:paddingLeft="@dimen/dim_10dp"
+                        android:paddingTop="@dimen/dim_5dp"
+                        android:paddingBottom="@dimen/dim_5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/ColorBlackLight" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutForSem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_bold"
+                        android:paddingTop="@dimen/dim_10dp"
+                        android:text="Number of semester"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_bold"
+                        android:paddingTop="@dimen/dim_10dp"
+                        android:text="Weeks/Semester"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_20sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:fontFamily="@font/lato_bold"
+                        android:paddingTop="@dimen/dim_10dp"
+                        android:text="Days/Week"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_20sp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/sem_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button_global"
+                android:backgroundTint="@color/colorGreen"
+                android:fontFamily="@font/lato_regular"
+                android:text="Submit"></Button>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_face"
+        android:icon="@drawable/ic_face_recognization"
+        android:title="@string/face_recognition"/>
+
+    <item
+        android:id="@+id/navigation_result"
+        android:icon="@drawable/ic_experiment_result_un_selected"
+        android:title="@string/experiment_result" />
+    <item
+        android:id="@+id/navigation_distress"
+        android:icon="@drawable/ic_distrace"
+        android:title="@string/distress_scenario"/>
+    <item
+        android:id="@+id/navigation_nida"
+        android:icon="@drawable/ic_nida"
+        android:title="@string/nida_curriculum"/>
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_setings"
+        android:title="@string/settings" />
+
+</menu>
